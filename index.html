@@ -76,6 +76,29 @@
   @media (prefers-reduced-motion: reduce) {
     .waze-btn::after { animation: none; }
   }
+
+  .save-contact-wrap {
+    padding: 18px 20px 4px;
+    text-align: center;
+  }
+
+  .save-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    background: #151517;
+    border: 1.5px solid #F3B815;
+    color: #F3B815;
+    font-weight: 700;
+    font-size: 14.5px;
+    text-decoration: none;
+  }
+
+  .save-contact-btn:active { filter: brightness(1.15); }
 </style>
 </head>
 <body>
@@ -92,6 +115,14 @@
     <a class="btn-overlay waze-btn" target="_blank" rel="noopener noreferrer"
        href="https://waze.com/ul?q=Carrera%207%20%2320-63%20B%2FCentenario%2C%20Jamund%C3%AD%2C%20Valle%20del%20Cauca&navigate=yes"
        aria-label="Como llegar por Waze">Waze</a>
+  </div>
+
+  <div class="save-contact-wrap">
+    <a class="save-contact-btn" download="mi-ferreteria.vcf"
+       href="data:text/vcard;base64,QkVHSU46VkNBUkQKVkVSU0lPTjozLjAKTjo7TWkgRmVycmV0ZXJpYTs7OwpGTjpNaSBGZXJyZXRlcmlhCk9SRzpNaSBGZXJyZXRlcmlhClRFTDtUWVBFPUNFTEwsVk9JQ0U6KzU3MzE2MjEwMDI4OQpBRFI7VFlQRT1XT1JLOjs7Q2FycmVyYSA3ICMgMjAtNjMsIEIvQ2VudGVuYXJpbztKYW11bmRpO1ZhbGxlIGRlbCBDYXVjYTs7Q29sb21iaWEKVVJMOmh0dHBzOi8vanJtdW5vem1hMjExNzEzMjMuZ2l0aHViLmlvL21pLWZlcnJldGVyaWEvCk5PVEU6TWF0ZXJpYWxlcyBkZSBjb25zdHJ1Y2Npb24sIG1hbm8gZGUgb2JyYSwgaGVycmFtaWVudGFzIHkgZGVzYXJyb2xsbyB3ZWIuCkVORDpWQ0FSRAo=">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="#F3B815" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7" r="4" stroke="#F3B815" stroke-width="2"/><path d="M19 8v6M22 11h-6" stroke="#F3B815" stroke-width="2" stroke-linecap="round"/></svg>
+      Guardar en mis contactos
+    </a>
   </div>
 
   <div class="block">
